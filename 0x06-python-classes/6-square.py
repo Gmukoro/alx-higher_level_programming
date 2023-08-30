@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 
-"""Define a class Square."""
+"""Define a class Sq."""
 
 
 class Square:
-    """Represent a square."""
+    """Represent a sq."""
 
     def __init__(self, size=0, position=(0, 0)):
         """Initialize a new square.
@@ -52,9 +52,8 @@ class Square:
             print("")
             return
 
-        [print("") for t in range(0, self.__position[1])]
-        for t in range(0, self.__size):
+        [print("") for i in range(0, self.__position[1])]
+        for i in range(0, self.__size):
             [print(" ", end="") for j in range(0, self.__position[0])]
             [print("#", end="") for k in range(0, self.__size)]
-            print(""):wq
-
+            print("")
