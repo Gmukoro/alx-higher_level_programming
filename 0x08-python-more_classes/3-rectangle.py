@@ -1,11 +1,12 @@
 #!/usr/bin/python3
+""" more practice with classes!!! """
 
 
 class Rectangle:
     """ initialize with the width and height with value checks
 
     Args:
-        width: how flat surface
+        width:...
         height: how tall this box is
 
     Return: none
@@ -53,10 +54,21 @@ class Rectangle:
         string = ""
         if self.__width is 0 or self.__height is 0:
             return string
-        for t in range(self.__height):
+        for i in range(self.__height):
             for j in range(self.__width):
                 string += "#"
-            if t is not self.__height - 1:
+            if i is not self.__height - 1:
                 string += "\n"
         return string
+    """ Not needed here. only later
+    def __repr__(self):
+        string = ""
+        if self.__width is 0 or self.__height is 0:
+            return string
+        for i in range(self.__height):
+            for j in range(self.__width):
+                string += "#"
+            string += "\n"
+        return string
 
+        """
