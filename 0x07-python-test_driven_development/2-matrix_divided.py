@@ -12,7 +12,7 @@ def matrix_divided(matrix, div):
     Returns: a new matrix with each element adjusted to the div amount
     """
     message = "matrix must be a matrix (list of lists) of integers/floats"
-    newmat = []
+    new = []
     if not matrix or matrix is [[]] or matrix is None:
         raise TypeError(message)
     if type(div) is int or type(div) is float or div is None:
@@ -25,13 +25,13 @@ def matrix_divided(matrix, div):
         length = len(matrix[0])
     else:
         raise TypeError(message)
-    for t in range(len(matrix)):  # real work. the appending
-        if len(matrix[t]) is not length:
+    for i in range(len(matrix)):  # real work. the appending
+        if len(matrix[i]) is not length:
             raise TypeError("Each row of the matrix must have the same size")
-        newmat.append([])
-        for j in matrix[i]:
-            if type(j) is int or type(j) is float:
-                newmat[i].append(round(j / div, 2))
+        new.append([])
+        for t in matrix[i]:
+            if type(t) is int or type(t) is float:
+                new[i].append(round(t / div, 2))
             else:
                 raise TypeError(message)
-    return newmat
+    return new
