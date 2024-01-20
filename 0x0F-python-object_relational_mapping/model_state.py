@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""
-Module that contains the class definition of a State and an instance Base = declarative_base().
+"""Start link class to table in database
 """
 import sys
 from model_state import Base, State
