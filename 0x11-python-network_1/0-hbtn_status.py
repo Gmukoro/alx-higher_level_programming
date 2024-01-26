@@ -6,7 +6,7 @@ from urllib.error import URLError
 
 def get_body_decode():
     try:
-        geit = Request("https://alx-intranet.hbtn.io/status")
+        req = Request("https://alx-intranet.hbtn.io/status")
         with urlopen(req) as response:
             body = response.read()
         print("Body response:")
