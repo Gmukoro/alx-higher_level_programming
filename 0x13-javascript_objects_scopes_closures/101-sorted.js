@@ -8,6 +8,6 @@ const result = {};
 for (let t = 0; t < values.length; t++) {
   result[JSON.stringify(values[t])] = [];
   matched = dKeys.filter(key => dict[key] === values[t]);
-  matched.forEach(item => result[JSON.stringify(values[i])].push(item));
+  matched.forEach(item => result[JSON.stringify(values[t])].push(item));
 }
 console.log(result);
