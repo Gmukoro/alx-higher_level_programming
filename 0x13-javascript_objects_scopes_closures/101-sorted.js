@@ -1,7 +1,7 @@
 #!/usr/bin/node
-const ma = require('./101-data').ma;
+const dict = require('./101-data').dict;
 const dKeys = Object.keys(dict);
-const values = Object.values(ma);
+const values = Object.values(dict);
 let matched;
 const result = {};
 // loop over the values
